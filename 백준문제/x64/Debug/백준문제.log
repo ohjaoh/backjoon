@@ -1,0 +1,4 @@
+﻿  32343.c
+C:\Users\user\Desktop\공부\백준\백준문제\32343.c(11,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\Desktop\공부\백준\백준문제\32343.c(12,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  백준문제.vcxproj -> C:\Users\user\Desktop\공부\백준\x64\Debug\백준문제.exe
