@@ -1,4 +1,5 @@
-﻿  32343.c
-C:\Users\user\Desktop\공부\백준\백준문제\32343.c(11,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\user\Desktop\공부\백준\백준문제\32343.c(12,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  백준문제.vcxproj -> C:\Users\user\Desktop\공부\백준\x64\Debug\백준문제.exe
+﻿  1026.c
+C:\Users\user\Desktop\project\backjoon\백준문제\1026.c(9,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\Desktop\project\backjoon\백준문제\1026.c(12,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\Desktop\project\backjoon\백준문제\1026.c(15,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  백준문제.vcxproj -> C:\Users\user\Desktop\project\backjoon\x64\Debug\백준문제.exe

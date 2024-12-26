@@ -1,3 +1,4 @@
 C:\Users\user\source\repos\백준문제\x64\Debug\백준문제.exe
 C:\Users\user\Desktop\백준\백준문제\x64\Debug\백준문제.exe
 C:\Users\user\Desktop\공부\백준\백준문제\x64\Debug\백준문제.exe
+C:\Users\user\Desktop\project\backjoon\백준문제\x64\Debug\백준문제.exe
