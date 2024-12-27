@@ -1,6 +1,23 @@
-/.vs/
-/x64/
-/*.exe
-*.pdb
+# Visual Studio 관련 파일/폴더
+.vs/
+x64/
+
+# 빌드 출력 파일
+*.exe
+*.dll
 *.obj
+*.pdb
 *.log
+
+# 임시 파일
+*.tmp
+*.user
+*.ipch
+
+# 백업 파일
+*.bak
+*.swp
+
+# OS/IDE 생성 파일
+.DS_Store
+Thumbs.db
