@@ -21,3 +21,38 @@ x64/
 # OS/IDE 생성 파일
 .DS_Store
 Thumbs.db
+
+# 추가 항목
+# C++ 빌드 파일
+*.ilk
+*.idb
+
+# CMake 관련 파일
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+
+# 기타 임시 파일
+*.~*
+*.log
+*.manifest
+*.tlog
+
+# Windows 환경 파일
+*.lnk
+
+# IntelliJ IDEA 관련 파일
+.idea/
+*.iml
+
+# Python 환경 파일
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node.js 환경 파일
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
