@@ -1,8 +1,7 @@
 #include <stdio.h>
-#define MAX 102
+#define MAX 110	  // 넉넉하게 110으로 수정
 int M = 0, N = 0, K = 0;
-
-// Out of Bounds로 안풀림
+// out of bounds면 배열을 넘기는 것
 
 int final[MAX][MAX] = { 0 }; // 모든 영역 사각형
 int checked[MAX][MAX] = { 0 }; // 방문여부
@@ -13,8 +12,11 @@ static int dfs(int row, int col) {
 	if (row < 0 || row >= M || col < 0 || col >= N || final[row][col] == 0 || checked[row][col]) {
 		return 0;
 	}
+
 	checked[row][col] = 1;
+
 	int size = 1;
+
 	// 사방을 탐색
 	for (int i = 0; i < 4; i++) {
 		int new_row = row + banghang[i][0];
@@ -27,7 +29,7 @@ static int dfs(int row, int col) {
 
 int main() {
 	int count = 0;
-	int input_data[MAX][2] = { 0 }; // 꼭짓점들 입력배열
+	int input_data[MAX][4] = { 0 }; // 꼭짓점들 입력배열
 	int area[MAX] = { 0 }; // 각 영역의 넓이
 	int dfs(int row, int col);
 
@@ -46,34 +48,31 @@ int main() {
 			final[i][j] = 1;
 		}
 	}
-	// 이놈이 문젠가?
-	for (int i = 0; i < K * 2; i++) {
-		for (int j = 0; j < 2; j++) {
+
+	for (int i = 0; i < K; i++) {
+		for (int j = 0; j < 4; j++) {
 			scanf("%d", &input_data[i][j]);
 		}
 	}
 
 	// 사각형에 직사각형의 영역을 0으로 바꾼다.(왼쪽아래와 오른쪽 위)
-	for (int i = 0; i < K * 2; i++) {
-		if (i % 2 == 1) {
-			int x1 = input_data[i - 1][0];
-			int y1 = input_data[i - 1][1];
-			int x2 = input_data[i][0];
-			int y2 = input_data[i][1];
+	for (int i = 0; i < K; i++) {
+		int x1 = input_data[i][0];
+		int y1 = input_data[i][1];
+		int x2 = input_data[i][2];
+		int y2 = input_data[i][3];
 
-			printf("직사각형 좌표: (%d, %d) -> (%d, %d)\n", x1, y1, x2, y2);
-
-			for (int j = x1; j < x2; j++) {
-				for (int k = y1; k < y2; k++) {
-					if (j < 0 || j >= N || k < 0 || k >= M) {
-						printf("직사각형 처리 중 경계 초과: j=%d, k=%d\n", j, k);
-					}
-					else {
-						final[k][j] = 0;
-					}
+		for (int j = x1; j < x2; j++) {
+			for (int k = y1; k < y2; k++) {
+				if (j < 0 || j >= N || k < 0 || k >= M) {
+					printf("직사각형 처리 중 경계 초과: j=%d, k=%d\n", j, k);
+				}
+				else {
+					final[k][j] = 0;
 				}
 			}
 		}
+
 
 	}
 
@@ -112,14 +111,3 @@ int main() {
 
 	return 0;
 }
-
-/*
-
-	// 디버그
-	for (int i = 0; i < M; i++) {
-		for (int j = 0; j < N; j++) {
-			printf("%d", final[i][j]);
-		}
-		printf("\n");
-	}
-*/
